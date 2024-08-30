@@ -2,11 +2,19 @@
 base_url = "https://johntsimmons.net"
 theme = "terminimal"
 
+title = "JohnTSimmons"
+description = "JohnTSimmons personal website"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+
+generate_feeds = true
+feed_filenames = ["rss.xml", "atom.xml"]
+generate_sitemap = true
+generate_robots_txt = true
 
 taxonomies = [
     {name = "tags"},
@@ -41,6 +49,8 @@ menu_items = [
     # tags should only be enabled if you have "tags" taxonomy
     # see documentation below for more details
     {name = "about me", url = "$BASE_URL/about"},
+
+    {name = "archives", url = "$BASE_URL/archive"},
 
     # set newtab to true to make the link open in new tab
     {name = "github", url = "https://github.com/JohnTSimmons", newtab = true},
