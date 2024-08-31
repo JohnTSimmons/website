@@ -5,7 +5,7 @@ path = "about"
 
 Hello, welcome to my website!
 
-{{ figure(src="me2023.jpeg",
+{{ figure(src="/me2023.jpeg",
           style = "width: 50%; border-radius:25px;",
           position="center",
           caption_position="center",
