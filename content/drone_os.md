@@ -16,11 +16,7 @@ DroneOS will feature players battling in a field of asteroids, using remote pilo
 
 To start with, it's important to detail out the objective for the players. 
 
-
-
 Players will start in a drone carrier, which is the immovable "base" for the players to spawn at. If their carrier is lost then the game is over, and that team loses.
-
-
 
 You can lose a carrier through two different methods; physical destruction and hacking. Hacking will be explained in a future section of this document, as I plan for it to contain unique mechanics not seen in other games.
 
@@ -28,11 +24,7 @@ You can lose a carrier through two different methods; physical destruction and h
 
 The players will start the game in a randomly generated asteroid field, where the asteroids are static objects and contain random minerals. These minerals are gathered by non-player-character (NPC) drones and returned to the carrier, where they are stockpiled and allowed to be spent on better weapons and parts for the players. 
 
-
-
 Players control drones of different classes, with configurable parts and weapons. These drones are used to map out the environment around them, find the enemy, and ultimately destroy the enemy carrier. 
-
-
 
 Players can also engage in electronic warfare, using a variety of jammers, decoys, and other devices to confuse, redirect, and attack the opposing team. 
 
@@ -40,11 +32,7 @@ Players can also engage in electronic warfare, using a variety of jammers, decoy
 
 The theme of the game is that two mining companies in a future like the *Alien* franchise are fighting over mineral deposits in space. 
 
-
-
 Technology is retro-futuristic which results in the monochromatic and text-focused user interface. Although technology like faster-than-light travel and artificial intelligence has been achieved.
-
-
 
 I would like to eventually have two separate factions for each team, but for initial development there will only be one faction for both teams.
 
