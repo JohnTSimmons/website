@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>JohnTSimmons</title>
+    <subtitle>JohnTSimmons personal website</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://johntsimmons.net/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://johntsimmons.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-09-06T00:00:00+00:00</updated>
+    <id>https://johntsimmons.net/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Adding Katex Support</title>
+        <published>2024-09-06T00:00:00+00:00</published>
+        <updated>2024-09-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://johntsimmons.net/katex-support/"/>
+        <id>https://johntsimmons.net/katex-support/</id>
+        
+        <summary type="html">&lt;p&gt;Self-notes on adding Katex support to this website. Should work for other Zola themes as well.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>DroneOS Part 1</title>
+        <published>2024-08-30T00:00:00+00:00</published>
+        <updated>2024-08-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://johntsimmons.net/drone-os/"/>
+        <id>https://johntsimmons.net/drone-os/</id>
+        
+        <summary type="html">&lt;p&gt;DroneOS is a video game I&#x27;ve been envisioning for some time now. My plan for it is to create a functioning two-dimensional video game with a top-down perspective. This document will outline the plans and game-design goals for me to call the project finished, with further posts illustrating the work that has been completed.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Hello, World!</title>
+        <published>2024-08-30T00:00:00+00:00</published>
+        <updated>2024-08-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://johntsimmons.net/hello-world/"/>
+        <id>https://johntsimmons.net/hello-world/</id>
+        
+        <summary type="html">&lt;p&gt;First post with Zola after moving off of Quartz.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+</feed>

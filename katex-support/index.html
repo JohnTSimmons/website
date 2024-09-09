@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adding Katex Support | JohnTSimmons</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://johntsimmons.net/style.css">
+    <link rel="stylesheet" href="https://johntsimmons.net/color/green-dark.css">
+
+        <link rel="stylesheet" href="https://johntsimmons.net/color/background_dark.css">
+    
+    <link rel="stylesheet" href="https://johntsimmons.net/font-hack-subset.css">
+
+    <meta name="description" content="">
+
+    <meta property="og:description" content="">
+    <meta property="og:title" content="Adding Katex Support | JohnTSimmons">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://johntsimmons.net/katex-support/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="Adding Katex Support | JohnTSimmons">
+    <meta property="twitter:domain" content="johntsimmons.net">
+    <meta property="twitter:url" content="https://johntsimmons.net/katex-support/">
+
+                <link rel="alternate" type="application/rss+xml" title="JohnTSimmons RSS Feed" href="https://johntsimmons.net/rss.xml" />
+                <link rel="alternate" type="application/atom+xml" title="JohnTSimmons Atom Feed" href="https://johntsimmons.net/atom.xml" />
+        <link rel="shortcut icon" type="image&#x2F;x-icon" href="/favicon.png">
+    
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="https://johntsimmons.net" style="text-decoration: none;">
+                    <div class="logo">
+                      
+                            JohnTSimmons
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        
+                <nav class="menu">
+            <ul class="menu__inner">
+                <li class="active"><a href="https://johntsimmons.net">home</a></li>
+            
+                <li><a href="https://johntsimmons.net/about">about me</a></li>
+            
+                <li><a href="https://johntsimmons.net/archive">archives</a></li>
+            
+                <li><a href="https://github.com/JohnTSimmons" target="_blank" rel="noopener noreferrer">github</a></li>
+            </ul>
+        </nav>
+    
+    
+        
+    </header>
+    
+
+    <div class="content">
+        
+    <div class="post">
+        
+<h1 class="post-title">
+    <a href="https://johntsimmons.net/katex-support/">Adding Katex Support</a>
+</h1>
+<div class="post-meta-inline">
+<span class="post-date"> 2024-09-06 </span>
+</div>
+
+ 
+        <div class="post-content"><p>Self-notes on adding Katex support to this website. Should work for other Zola themes as well.</p>
+<span id="continue-reading"></span><h1 id="config-changes">Config Changes</h1>
+<p>In the [extra] category katex_support and katex_auto_render bools are added and need to be set to true.</p>
+<h1 id="head-template">Head Template</h1>
+<p>In the head template for the html pages there is a new if statement that checks for katex_support to be true, and if it is it adds the script tags necessary to make Katex function. Unfortunately this introduces Javascript to the website, but it works and only took a few minutes to implement.</p>
+<h1 id="usage">Usage</h1>
+<p>Create a katex block with the following snippet: (remove the space between the k and atex in line one.)</p>
+<pre data-lang="html" style="background-color:#151515;color:#e8e8d3;" class="language-html "><code class="language-html" data-lang="html"><span>{% k atex(block=true) %}
+</span><span>
+</span><span>x = y^2 log(z){cases}
+</span><span>
+</span><span>{% end %}
+</span></code></pre>
+<p>The above line would render as:</p>
+<script type="math/tex;mode=display">x = y^2 log(z)</script>
+<p>A bug I need to fix is that multiline Katex expressions do not render properly...</p>
+<h1 id="update-2024-09-09">Update 2024-09-09</h1>
+<p>Removed Katex support by setting config changes to false. Mainly because I wanted to go back to an entirely Javascript free site, and I could not figure out why the katex block rendering wasn't functioning correctly.</p>
+</div> 
+        
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h"
+            ></span
+        >
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        <span class="button previous">
+            <a href="https://johntsimmons.net/drone-os/">
+                <span class="button__text"><< DroneOS Part 1</span>
+            </a>
+        </span>
+         </div>
+</div>
+
+    </div>
+
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>(c) 
+    2024
+ Powered by <a href="https://www.getzola.org/">Zola</a></span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: Modified <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> originally by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>

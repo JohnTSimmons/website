@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DroneOS Part 1 | JohnTSimmons</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="https://johntsimmons.net/style.css">
+    <link rel="stylesheet" href="https://johntsimmons.net/color/green-dark.css">
+
+        <link rel="stylesheet" href="https://johntsimmons.net/color/background_dark.css">
+    
+    <link rel="stylesheet" href="https://johntsimmons.net/font-hack-subset.css">
+
+    <meta name="description" content="">
+
+    <meta property="og:description" content="">
+    <meta property="og:title" content="DroneOS Part 1 | JohnTSimmons">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://johntsimmons.net/drone-os/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:title" content="DroneOS Part 1 | JohnTSimmons">
+    <meta property="twitter:domain" content="johntsimmons.net">
+    <meta property="twitter:url" content="https://johntsimmons.net/drone-os/">
+
+                <link rel="alternate" type="application/rss+xml" title="JohnTSimmons RSS Feed" href="https://johntsimmons.net/rss.xml" />
+                <link rel="alternate" type="application/atom+xml" title="JohnTSimmons Atom Feed" href="https://johntsimmons.net/atom.xml" />
+        <link rel="shortcut icon" type="image&#x2F;x-icon" href="/favicon.png">
+    
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="https://johntsimmons.net" style="text-decoration: none;">
+                    <div class="logo">
+                      
+                            JohnTSimmons
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        
+                <nav class="menu">
+            <ul class="menu__inner">
+                <li class="active"><a href="https://johntsimmons.net">home</a></li>
+            
+                <li><a href="https://johntsimmons.net/about">about me</a></li>
+            
+                <li><a href="https://johntsimmons.net/archive">archives</a></li>
+            
+                <li><a href="https://github.com/JohnTSimmons" target="_blank" rel="noopener noreferrer">github</a></li>
+            </ul>
+        </nav>
+    
+    
+        
+    </header>
+    
+
+    <div class="content">
+        
+    <div class="post">
+        
+<h1 class="post-title">
+    <a href="https://johntsimmons.net/drone-os/">DroneOS Part 1</a>
+</h1>
+<div class="post-meta-inline">
+<span class="post-date"> 2024-08-30 </span>
+</div>
+
+
+<span class="post-tags-inline"> :: tags:&nbsp;
+    <a
+        class="post-tag"
+        href="https://johntsimmons.net/tags/droneos/"
+        >#DroneOS</a
+    >&nbsp;
+    <a
+        class="post-tag"
+        href="https://johntsimmons.net/tags/game-dev/"
+        >#Game Dev</a
+    >&nbsp;
+    <a
+        class="post-tag"
+        href="https://johntsimmons.net/tags/projects/"
+        >#Projects</a
+    ></span>
+ 
+        <div class="post-content"><p>DroneOS is a video game I've been envisioning for some time now. My plan for it is to create a functioning two-dimensional video game with a top-down perspective. This document will outline the plans and game-design goals for me to call the project finished, with further posts illustrating the work that has been completed.</p>
+<span id="continue-reading"></span>
+<p>DroneOS will feature players battling in a field of asteroids, using remote piloted drones to mine resources, fight other players and NPC drones, and destroy the enemy drone carrier to win the game. The game will have a focus on diegetic UI elements, with a particular element being the command line which is used to control individual components of the drone. The game will have full Newtonian physics, with players using thrusters on their ships to speed up and slow down, and the speed will be conserved until the thrusters are used or they impact another object.</p>
+<h1 id="game-objective">Game Objective</h1>
+<p>To start with, it's important to detail out the objective for the players.</p>
+<p>Players will start in a drone carrier, which is the immovable "base" for the players to spawn at. If their carrier is lost then the game is over, and that team loses.</p>
+<p>You can lose a carrier through two different methods; physical destruction and hacking. Hacking will be explained in a future section of this document, as I plan for it to contain unique mechanics not seen in other games.</p>
+<h1 id="gameplay-loop">Gameplay Loop</h1>
+<p>The players will start the game in a randomly generated asteroid field, where the asteroids are static objects and contain random minerals. These minerals are gathered by non-player-character (NPC) drones and returned to the carrier, where they are stockpiled and allowed to be spent on better weapons and parts for the players.</p>
+<p>Players control drones of different classes, with configurable parts and weapons. These drones are used to map out the environment around them, find the enemy, and ultimately destroy the enemy carrier.</p>
+<p>Players can also engage in electronic warfare, using a variety of jammers, decoys, and other devices to confuse, redirect, and attack the opposing team.</p>
+<h1 id="theme">Theme</h1>
+<p>The theme of the game is that two mining companies in a future like the <em>Alien</em> franchise are fighting over mineral deposits in space.</p>
+<p>Technology is retro-futuristic which results in the monochromatic and text-focused user interface. Although technology like faster-than-light travel and artificial intelligence has been achieved.</p>
+<p>I would like to eventually have two separate factions for each team, but for initial development there will only be one faction for both teams.</p>
+<h1 id="plan">Plan</h1>
+<p>The plan is to create a prototype by the end of October, where a playable game of DroneOS is possible. The initial goal will be to have flyable drones, randomly generated maps, and the user interface completed. AI Drones, the second faction and hacking will come as future updates to the game, assuming that this first part is successful.</p>
+</div> 
+        
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h"
+            ></span
+        >
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        <span class="button previous">
+            <a href="https://johntsimmons.net/hello-world/">
+                <span class="button__text"><< Hello, World!</span>
+            </a>
+        </span>
+         
+        <span class="button next">
+            <a href="https://johntsimmons.net/katex-support/">
+                <span class="button__text">Adding Katex Support >></span>
+            </a>
+        </span>
+        </div>
+</div>
+
+    </div>
+
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>(c) 
+    2024
+ Powered by <a href="https://www.getzola.org/">Zola</a></span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: Modified <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> originally by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>

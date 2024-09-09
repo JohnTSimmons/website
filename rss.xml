@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>JohnTSimmons</title>
+      <link>https://johntsimmons.net</link>
+      <description>JohnTSimmons personal website</description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://johntsimmons.net/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 06 Sep 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>Adding Katex Support</title>
+          <pubDate>Fri, 06 Sep 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://johntsimmons.net/katex-support/</link>
+          <guid>https://johntsimmons.net/katex-support/</guid>
+          <description xml:base="https://johntsimmons.net/katex-support/">&lt;p&gt;Self-notes on adding Katex support to this website. Should work for other Zola themes as well.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>DroneOS Part 1</title>
+          <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://johntsimmons.net/drone-os/</link>
+          <guid>https://johntsimmons.net/drone-os/</guid>
+          <description xml:base="https://johntsimmons.net/drone-os/">&lt;p&gt;DroneOS is a video game I&#x27;ve been envisioning for some time now. My plan for it is to create a functioning two-dimensional video game with a top-down perspective. This document will outline the plans and game-design goals for me to call the project finished, with further posts illustrating the work that has been completed.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Hello, World!</title>
+          <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>https://johntsimmons.net/hello-world/</link>
+          <guid>https://johntsimmons.net/hello-world/</guid>
+          <description xml:base="https://johntsimmons.net/hello-world/">&lt;p&gt;First post with Zola after moving off of Quartz.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
