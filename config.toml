@@ -90,5 +90,5 @@ page_titles = "combined"
 #           for indexes and taxonomies' pages.
 #default_og_image = ""
 
-katex_support = true
-katex_auto_render = true
+katex_support = false
+katex_auto_render = false

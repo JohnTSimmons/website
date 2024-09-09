@@ -39,3 +39,7 @@ x = y^2 log(z)
 
 
 A bug I need to fix is that multiline Katex expressions do not render properly...
+
+# Update 2024-09-09
+
+Removed Katex support by setting config changes to false. Mainly because I wanted to go back to an entirely Javascript free site, and I could not figure out why the katex block rendering wasn't functioning correctly. 
